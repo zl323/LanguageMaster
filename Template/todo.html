@@ -1,0 +1,12 @@
+<h1>this is to do page.</h1>
+
+<!-- <ul>
+    <li>temperaory todo list1</li>
+    <li>temperaory todo list2</li>
+</ul> -->
+
+<ul>
+    {% for todo_item in all_items %}
+        <li>{{ todo_item.content }}</li>
+    {% endfor %}
+</ul>
